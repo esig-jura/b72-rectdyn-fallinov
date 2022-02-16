@@ -1,0 +1,206 @@
+/******************
+GENERAL
+******************/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background: #fff;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 800;
+    color: #599a68;
+}
+
+h1{
+    color: #fff;
+}
+
+h2 {
+    margin: 2em 0 1em;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #6ab47b;
+}
+
+.bouton,
+[type="submit"],
+[type="reset"],
+button {
+    color: white;
+    padding: 1em;
+    background-color: #599a68;
+    border: none;
+}
+
+
+[type="reset"] {
+    background-color: #CCC;
+}
+
+.bouton:hover ,
+[type="submit"]:hover ,
+[type="reset"]:hover ,
+button:hover  {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 0 0 2em 0;
+}
+
+/******************
+ENTETE DU SITE
+******************/
+header {
+    padding: 10px 2.5%;
+    margin: 0 0 30px;
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+    background: #6ab47b;
+}
+
+/******************
+CONTENU PRINCIPAL
+******************/
+section {
+    padding: 0 2.5%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/******************
+LISTE DES MESSAGES
+******************/
+
+.messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.messages li {
+    padding: .5rem;
+    margin: .5rem 0;
+    background: #ffffff;
+    box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.125);
+    width: 100%;
+}
+
+.messages footer {
+    color: #ccc;
+}
+
+.messages footer time {
+    font-size: .9em;
+}
+
+.messages .author {
+    font-weight: 700;
+}
+
+/******************
+FORMULAIRES
+******************/
+form {
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin: 2em auto;
+    background-color: #f1f1f1;
+}
+
+form ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+form li:last-child {
+    margin: 0;
+}
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input + label {
+    display: inline;
+}
+
+input,
+textarea {
+    border: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 1em;
+}
+
+textarea {
+    min-height: 10em;
+}
+
+
+/*******************
+RECTANGLE
+******************/
+
+#rectangle {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    padding: .5em;
+    margin: 0 auto;
+    background-color: yellow;
+    text-align: center;
+}
+
+
+/******************
+PIED DE PAGE
+******************/
+#wrapper > footer {
+    font-size: .75rem;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 2.5%;
+}
+
