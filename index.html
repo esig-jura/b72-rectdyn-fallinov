@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133a | Exercice RectDyn</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="index.html">
+            <h1>RectDyn</h1>
+        </a>
+    </header>
+    <section>
+        <h2>Formulaire de modification</h2>
+        <!-- Uniquement modifier le code après cette ligne. -->
+        <form id="formRect" action="https://kode.ch/getpost/">
+            <ul>
+                <li>
+                    <label for="hauteur">Hauteur</label>
+                    <input autofocus name="hauteur" id="hauteur" type="text" value="100"/>
+                </li>
+                <li>
+                    <label for="largeur">Largeur</label>
+                    <input name="largeur" id="largeur" type="text" value="100"/>
+                </li>
+                <li>
+                    <label for="fond">Couleur de fond</label>
+                    <select name="fond" id="fond">
+                        <option value="blue">Bleu</option>
+                        <option selected value="yellow">Jaune</option>
+                        <option value="red">Rouge</option>
+                        <option value="green">Vert</option>
+                    </select>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Couleur du texte</legend>
+                        <input type="radio" name="color" id="noir" value="black" checked/>
+                        <label for="noir">Noire</label>
+
+                        <input type="radio" name="color" id="blanc" value="white"/>
+                        <label for="blanc">Blanche</label>
+
+                        <input type="radio" name="color" id="rose" value="pink"/>
+                        <label for="rose">Rose</label>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Style du texte</legend>
+
+                        <input type="checkbox" name="gras" id="gras"/>
+                        <label for="gras">Gras</label>
+
+                        <input type="checkbox" name="souligne" id="souligne"/>
+                        <label for="souligne">Soulign&eacute;</label>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="txt">Texte</label>
+                    <textarea rows="2" cols="20" name="txt" id="txt">Votre texte</textarea>
+                </li>
+                <li>
+                    <button class="left" type="reset" name="btReset">R&eacute;initialiser</button>
+                    <button class="right" type="submit">Modifier le rectangle</button>
+                </li>
+            </ul>
+        </form>
+        <!-- Uniquement modifier le code avant cette ligne. -->
+        <div id="rectangle">
+            Votre texte
+        </div>
+    </section>
+</div> <!-- .wrapper -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
